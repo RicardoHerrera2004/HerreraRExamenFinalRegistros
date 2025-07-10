@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SQLite;
+using HerreraRExamenFinalRegistros.Models;
 
-namespace HerreraRExamenFinalRegistros.Models
+namespace HerreraRExamenFinalRegistros.Repositories
 {
-    public class Log
+    class ModelRepository
     {
-        public string Descripcion { get; set; }
+
     }
 }

@@ -7,7 +7,7 @@ using SQLite;
 
 namespace HerreraRExamenFinalRegistros.Models
 {
-    class Proyecto
+    public class Proyecto
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }

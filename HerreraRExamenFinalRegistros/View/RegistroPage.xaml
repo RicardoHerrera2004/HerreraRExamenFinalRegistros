@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HerreraRExamenFinalRegistros.View.RegistroPage"
+             xmlns:vm="clr-namespace:HerreraRExamenFinalRegistros.ViewModels"
+             Title="RegistroPage">
+
+    <ContentPage.BindingContext>
+        <vm:LogViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label Text="Registro de Proyecto" FontSize="20" HorizontalOptions="Center" />
+
+            <Entry Placeholder="Nombre del Proyecto" Text="{Binding NombreProyecto}" />
+            <Entry Placeholder="Responsable" Text="{Binding Responsable}" />
+            <Entry Placeholder="Progreso (%)" Keyboard="Numeric" Text="{Binding Progreso}" />
+            <Entry Placeholder="Duración (días)" Keyboard="Numeric" Text="{Binding DuracionDias}" />
+
+            <Button Text="Guardar Proyecto" Command="{Binding GuardarCommand}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -10,8 +10,6 @@ using HerreraRExamenFinalRegistros.Repositories;
 
 namespace HerreraRExamenFinalRegistros.ViewModels
 {
-    public class ListaLogViewModel
-    {
         public class ListaLogsViewModel : INotifyPropertyChanged
         {
             public ObservableCollection<Log> Logs { get; set; } = new();
@@ -39,5 +37,4 @@ namespace HerreraRExamenFinalRegistros.ViewModels
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propiedad));
             }
         }
-    }
 }
